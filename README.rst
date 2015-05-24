@@ -1,8 +1,5 @@
-Slurp the beautiful soup
-===============
-
-BeautifulSoup4 packaged into a command line tool.
-
+BeautifulSoup4_ packaged into a command line tool.
+=================================================
 
 Installation
 ---------
@@ -44,6 +41,7 @@ Pipe into slurp:
 
 .. _Github: https://github.com/peterhil/slurp/
 .. _Pypi: http://pypi.python.org/pypi/beautifulsoup4-slurp
+.. _Beautifulsoup4: http://www.crummy.com/software/BeautifulSoup/
 
 
 License
