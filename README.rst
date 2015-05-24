@@ -13,12 +13,8 @@ From the Python package index (Pypi_):
 
 or from Github_:
 
-    (sudo) pip install watchdog  # optional
-
     git clone https://github.com/peterhil/slurp.git
-
     cd slurp
-
     (sudo) python setyp.py install
 
 
