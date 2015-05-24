@@ -33,6 +33,7 @@ setup(
     install_requires = [
         'argh >= 0.26.1',
         'beautifulsoup4 >= 4.3.2',
+        'eight >= 0.3.2',
         'html5lib >= 0.99999',
         'lxml >= 3.4.4',
     ],

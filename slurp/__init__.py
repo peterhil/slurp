@@ -7,15 +7,21 @@
 # For the full copyright and license information, please view the LICENSE
 # file that was distributed with this source code.
 
-from __future__ import print_function
+from __future__ import (print_function, division, unicode_literals, absolute_import)
 
 import argh
 import argparse
 import codecs
+import eight
 import subprocess
 import sys
 
 from bs4 import BeautifulSoup
+from eight import *
+
+
+eight.wrap_stdio()
+eight.decode_command_line_args()
 
 
 def character_encoding(file_path):
