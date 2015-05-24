@@ -18,7 +18,7 @@ except ImportError:
 
 
 PACKAGE_NAME = 'beautifulsoup4-slurp'
-PACKAGE_VERSION = '0.0.1'
+PACKAGE_VERSION = '0.0.2'
 PACKAGES = ['slurp']
 
 
