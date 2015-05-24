@@ -42,7 +42,7 @@ Pipe into slurp:
     echo '<title>Slurp!</title><p><a href="https://github.com/peterhil/slurp/">Github</a>' | slurp -y
 
 
- .. _Github: https://github.com/peterhil/slurp/
+.. _Github: https://github.com/peterhil/slurp/
 .. _Pypi: http://pypi.python.org/pypi/beautifulsoup4-slurp
 
 
