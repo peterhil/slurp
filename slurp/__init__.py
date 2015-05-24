@@ -12,14 +12,14 @@ from __future__ import print_function
 import argh
 import argparse
 import codecs
-import commands
+import subprocess
 import sys
 
 from bs4 import BeautifulSoup
 
 
 def character_encoding(file_path):
-    return commands.getoutput('file -b --mime-encoding %s' % file_path)
+    return bytes.decode(subprocess.check_output(['file', '-b', '--mime-encoding', file_path]))
 
 
 def error_exit(err):
