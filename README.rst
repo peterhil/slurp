@@ -54,3 +54,10 @@ All rights reserved. This software is licensed under MIT license.
 
 For the full copyright and license information, please view the LICENSE  
 file that was distributed with this source code.
+
+.. image:: https://img.shields.io/pypi/v/beautifulsoup4-slurp.svg
+        :target: https://pypi.python.org/pypi/beautifulsoup4-slurp
+.. image:: https://img.shields.io/pypi/dm/beautifulsoup4-slurp.svg
+        :target: https://pypi.python.org/pypi/beautifulsoup4-slurp
+.. image:: https://img.shields.io/pypi/l/beautifulsoup4-slurp.svg
+        :target: https://pypi.python.org/pypi/beautifulsoup4-slurp
