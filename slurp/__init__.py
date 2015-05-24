@@ -27,26 +27,27 @@ def error_exit(err):
     return sys.exit(err.errno)
 
 
-def read(input):
+def read(infile):
     try:
-        if input == '-':
+        if infile == '-':
             return sys.stdin.read()
         else:
-            with codecs.open(input, 'rb', character_encoding(input)) as f:
-                return f.read()
-    except IOError, e:
-        return error_exit(e)
+            with codecs.open(infile, 'rb', character_encoding(infile)) as f:
+                inf = codecs.getwriter('utf-8')(f)
+                return inf.read()
+    except IOError as err:
+        return error_exit(err)
 
 
 def write(output, data):
     try:
         if output == '-':
-            return sys.stdout.write(data)
+            return print(data)
         else:
             with codecs.open(output, 'wb', 'utf-8-sig') as f:
-                return f.write(data)
-    except IOError, e:
-        return error_exit(e)
+                return f.write(data + "\n")
+    except IOError as err:
+        return error_exit(err)
 
         
 class recursion_limit:
@@ -72,7 +73,7 @@ def slurp(input='-', output='-', parser='html5lib', recursion=2000, **options):
     html = parse(doc, parser, recursion)
     if options['pretty']:
         html = html.prettify()
-    return write(output, unicode(html) + "\n")
+    return write(output, html)
 
 
 def main():
