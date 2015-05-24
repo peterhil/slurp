@@ -25,6 +25,9 @@ eight.decode_command_line_args()
 
 
 def character_encoding(file_path):
+    if sys.version_info < (2, 7, 0):
+        import commands
+        return commands.getoutput('file -b --mime-encoding %s' % file_path)
     return bytes.decode(subprocess.check_output(['file', '-b', '--mime-encoding', file_path]))
 
 
