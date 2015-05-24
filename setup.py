@@ -17,7 +17,7 @@ except ImportError:
     from distutils.core import setup
 
 
-PACKAGE_NAME = 'slurp'
+PACKAGE_NAME = 'beautifulsoup4-slurp'
 PACKAGE_VERSION = '0.0.1'
 PACKAGES = ['slurp']
 
