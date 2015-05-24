@@ -1,6 +1,11 @@
 BeautifulSoup4_ packaged into a command line tool.
 =================================================
 
+For now this tool just parses `HTML tag soup`_ with BeautifulSoup4,
+and writes out the results. This can help for example to properly parse
+the structure of a Netscape bookmarks file, which omits many ending tags.
+
+
 Installation
 ---------
 
@@ -42,6 +47,7 @@ Pipe into slurp:
 .. _Github: https://github.com/peterhil/slurp/
 .. _Pypi: http://pypi.python.org/pypi/beautifulsoup4-slurp
 .. _Beautifulsoup4: http://www.crummy.com/software/BeautifulSoup/
+.. _`HTML tag soup`: https://en.wikipedia.org/wiki/Tag_soup
 
 
 License
