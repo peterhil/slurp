@@ -21,19 +21,24 @@ or from Github_:
 Usage
 -----
 
-    # Show help
+Show help:
+
     slurp -h
 
-    # Parse with html5lib and pretty print into stdout
+Parse with html5lib and pretty print into stdout:
+
     slurp -i bookmarks.html -p 'html5lib' -y
 
-    # Parse with lxml and pretty print into stdout
+Parse with lxml and pretty print into stdout:
+
     slurp -i bookmarks.html -p 'lxml' -y
 
-    # Write pretty-printed to output to file
+Write pretty-printed to output to file:
+
     slurp -y -i bookmarks.html -o bookmarks_soup.html
 
-    # Pip into
+Pipe into slurp:
+
     echo '<title>Slurp!</title><p><a href="https://github.com/peterhil/slurp/">Github</a>' | slurp -y
 
 
